@@ -24,9 +24,10 @@ pipeline {
         }
         stage('Build Project') {
             steps {
+                script{
                 // Stage 3: Build Maven project
                 bat 'mvn clean install'
-                echo 'Project build successfully'
+            }
             }
         }
 
