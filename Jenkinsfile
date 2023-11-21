@@ -37,7 +37,7 @@ pipeline {
                     // Stage 4: Build Docker image
                     
                     // Build the Docker image
-                    sh "docker build -t fataddaimg -f https://github.com/shruti2025/fat/blob/79c76de06eb5d862904ace8f6a29bdb480815eef/fatadda/Dockerfile . "
+                    sh "docker build -t fataddaimg . "
                     
                 }
             }
