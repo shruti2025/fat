@@ -35,7 +35,13 @@ pipeline {
             steps {
                 script {
                     // Stage 4: Build Docker image
-                    sh 'docker build -t fataddaimg .'
+                    // Define the Dockerfile location and tag for the image
+                    def dockerImage = 'fataddaimg'
+                    def dockerfile = 'fatadda/Dockerfile'
+                    
+                    // Build the Docker image
+                    sh "docker build -t ${dockerImage} -f ${dockerfile} ."
+                    
                 }
             }
         }
