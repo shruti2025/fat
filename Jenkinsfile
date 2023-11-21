@@ -40,7 +40,7 @@ pipeline {
                     def dockerfile = 'fatadda/Dockerfile'
                     
                     // Build the Docker image
-                    sh "docker build -t ${dockerImage} -f ${dockerfile} ."
+                    sh "docker build -t fataddaimg -f fatadda/Dockerfile ."
                     
                 }
             }
