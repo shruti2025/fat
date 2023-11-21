@@ -37,7 +37,7 @@ pipeline {
                     // Stage 4: Build Docker image
                     
                     // Build the Docker image
-                    sh "docker build -t fataddaimg . "
+                   dockerImage = docker.build('fataddaimg')
                     
                 }
             }
