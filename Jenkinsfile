@@ -50,7 +50,7 @@ pipeline {
             steps {
                 script {
                     // Stage 5: Push Docker image to repository
-                    sh 'docker push fataddaimg'
+                    sh 'docker push shruti2025/fataddaimg:fataddaimg'
                 }
             }
         }
